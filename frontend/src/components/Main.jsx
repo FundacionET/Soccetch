@@ -4,7 +4,7 @@ import HeaderP from './Header/Header'
 import Footer from './Footer/Footer'
 
 
-const Principal = () => {
+const Main = () => {
     return (
         <div>
             <HeaderP>
@@ -21,4 +21,4 @@ const Principal = () => {
     )
 }
 
-export default Principal
+export default Main
