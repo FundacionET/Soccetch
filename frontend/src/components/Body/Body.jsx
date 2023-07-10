@@ -1,9 +1,12 @@
 import React from "react";
+import { Bodys } from "./StyledBody";
 
 
 const Body = () => {
     return (
-    <div>Body</div>
+    <div>
+        <Bodys></Bodys>
+    </div>
     )
 }
 

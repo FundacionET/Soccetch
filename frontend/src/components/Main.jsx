@@ -1,13 +1,23 @@
 import React from 'react'
 import Body from './Body/Body'
+import HeaderP from './Header/Header'
+import Footer from './Footer/Footer'
 
 
 const Principal = () => {
     return (
-        <Body>
+        <div>
+            <HeaderP>
+                {/* Aqui trabaja diego */}
+            </HeaderP>
+            <Body>
+                {/* Aqui trabaja deiner  */}
+            </Body>
+            <Footer>
+                {/* Aqui trabaja Rafael */}
+            </Footer>
             
-        </Body>
-
+        </div>
     )
 }
 
