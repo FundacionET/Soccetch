@@ -1,13 +1,16 @@
 import React from "react";
-import { Bodys } from "./StyledBody";
-
+import { Bodys, Cajacarrusel, Cuadronoticias,  } from "./StyledBody";
 
 const Body = () => {
     return (
-    <div>
-        <Bodys></Bodys>
-    </div>
-    )
-}
+        <div>
+        <Bodys>
+            <Cajacarrusel>
+            <Cuadronoticias>Noticias Destacadas</Cuadronoticias>
+            </Cajacarrusel>
+        </Bodys>
+        </div>
+    );
+};
 
-export default Body
+export default Body;
