@@ -1,13 +1,10 @@
 import React from "react";
-import { Bodys, Cajacarrusel, Cuadronoticias,  } from "./StyledBody";
 
 const Body = () => {
     return (
         <div>
         <Bodys>
-            <Cajacarrusel>
-            <Cuadronoticias>Noticias Destacadas</Cuadronoticias>
-            </Cajacarrusel>
+
         </Bodys>
         </div>
     );
