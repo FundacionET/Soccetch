@@ -16,7 +16,7 @@ export const Bodys = styled.div`
 
 export const Cuadronoticias = styled.div`
     height: 2.563rem;
-    width: 120rem;
+    width: 100%;
     background-color: #0000f9;
     display: flex;
     align-items: center;
@@ -26,6 +26,6 @@ export const Cuadronoticias = styled.div`
 `
 export const Cajacarrusel = styled.div`
     height: 42.313rem;
-    width: 120rem;
+    width: 100%;
     border: solid 4px aqua;
 `;
