@@ -22,7 +22,7 @@ export const Cuadronoticias = styled.div`
     align-items: center;
     justify-content: center;
     color: #fff;
-    font-size: 50px;
+    font-size: 30px;
 `
 export const Cajacarrusel = styled.div`
     height: 42.313rem;
