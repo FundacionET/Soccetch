@@ -1,5 +1,5 @@
 import React from "react";
-import { Bodys, Cajacarrusel, Cuadronoticias,  } from "./StyledBody";
+import { Bodys, Cajacarrusel, Cuadronoticias  } from "./StyledBody";
 
 const Body = () => {
     return (
