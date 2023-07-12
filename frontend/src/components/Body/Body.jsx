@@ -6,7 +6,7 @@ const Body = () => {
         <div>
         <Bodys>
             <Cajacarrusel>
-            <Cuadronoticias>Noticias Destacadas</Cuadronoticias>
+            <Cuadronoticias>Noticias Destacadas prueba</Cuadronoticias>
             </Cajacarrusel>
         </Bodys>
         </div>
