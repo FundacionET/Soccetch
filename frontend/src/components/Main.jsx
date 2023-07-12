@@ -8,7 +8,7 @@ const Main = () => {
     return (
         <div>
             <HeaderP>
-                {/* Aqui trabaja diego */}
+                
             </HeaderP>
             <Body>
                 {/* Aqui trabaja deiner  */}
