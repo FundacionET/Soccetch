@@ -104,7 +104,7 @@ font-family: "Montserrat", sans-serif;
 // `
 
 export const Enviar = styled.button`
-color: #fff !important;
+color: #ffffff !important;
 font-size: 0%.8;
 font-weight: bold;
 padding: 0.5em 1.2em;
@@ -144,7 +144,7 @@ export const Efecto = styled.div`
 font-family: "Montserrat", sans-serif;
 padding: 0.5em;
 &:hover {
-    color: #2600ff;
+    color: #1900ff;
     transition: 0.6s;
 }
 `;
@@ -169,7 +169,7 @@ export const Efecto2 = styled.div`
 font-family: "Montserrat", sans-serif;
 padding: 0.5em;
 &:hover {
-    color: #00aeff;
+    color: #1DA1F2;
     transition: 0.6s;
 }
 `;
