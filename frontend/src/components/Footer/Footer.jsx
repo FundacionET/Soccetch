@@ -9,7 +9,15 @@ import { IoLogoYoutube } from "react-icons/io";
 
 import { Cajafooter, Cajainfo, Contactanos } from "./StyledFooter";
 import { Cajasiguenos, Siguenos, Logos } from "./StyledFooter";
-import {Cajacomentarios,Comentarios,Enviar,Efecto,Efecto1,Efecto2,Efecto3} from "./StyledFooter";
+import {
+  Cajacomentarios,
+  Comentarios,
+  Enviar,
+  Efecto,
+  Efecto1,
+  Efecto2,
+  Efecto3,
+} from "./StyledFooter";
 
 function Footer() {
   return (
@@ -41,7 +49,7 @@ function Footer() {
               <BsTwitter style={{ fontSize: "2rem" }} />
             </Efecto2>
             <Efecto3>
-            <IoLogoYoutube style={{ fontSize: "2rem" }} />
+              <IoLogoYoutube style={{ fontSize: "2rem" }} />
             </Efecto3>
           </Logos>
         </Cajasiguenos>

@@ -12,7 +12,7 @@ export const Cajafooter = styled.div`
     #021b79,
     #0575e6
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  width: 100%;
+  width: 98.2%;
   height: 15.563rem;
   border: solid 1px black;
   display: flex;
