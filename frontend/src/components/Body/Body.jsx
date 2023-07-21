@@ -11,6 +11,7 @@ const Body = () => {
         </Bodys>
         </div>
     );
+    
 };
 
 export default Body;
