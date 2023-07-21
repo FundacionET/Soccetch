@@ -4,7 +4,7 @@ import styled from 'styled-components'
 export const HeaderPrincipal = styled.header`
     width: 100%;
     height: 100%;
-    background-color: #1B4F72;
+    
     /* border: solid black 0.125rem; */
 `
 
@@ -21,11 +21,22 @@ export const Header1 = styled.header`
 
 /* Este es donde esta la barra de navegacion */
 export const Header2 = styled.header`
-    height: 6.25rem;
+    height: 4.25rem;
     width: 100%;
     /* border: solid red 0.125rem; */
     display: flex;
     justify-content: center;
+    background: #0575e6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #021b79,
+    #0575e6
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #021b79,
+    #0575e6
+  );
 `
 /* ESTE CAJA CONTIENE TANTO LA BARRA DE NAV, LOGO Y SOCETECH */
 export const ContenedorBLT = styled.div`
@@ -38,11 +49,12 @@ export const ContenedorBLT = styled.div`
 
 /* Aqui es donde se despliega la barra inferior izquierda */
 export const BarraDesplegable = styled.button`
-    width: 7.75rem;
-    height: 0%;
+    width: 6.75rem;
+    height: 30px;
+    margin-bottom: 0px;
     border: none;
     background-color: #000000;
-    font-size: 2.980rem;
+    font-size: 3.001rem;
     color: white;
     align-items: center;
     display: flex;
@@ -104,46 +116,69 @@ export const Ingresar = styled.button`
     width: 6.25rem;
     height: 2.188rem;
     border: solid white 0.125rem;
-    background-color: #1B4F72;
+    background-color: #0575E6;
     color: white;
     cursor: pointer;
-    border-radius: 10%;
+    border-radius: 10px;
     font-size: 1.063rem;
     font-family: 'Bacasime Antique', serif;
     &:hover {
-    background-color: #5a9ec9;
+        background: #0575e6; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+    to right,
+    #021b79,
+    #0575e6
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+    to right,
+    #021b79,
+    #0575e6
+    );
     transition:.3s ease all;
-    transform: scale(1.3);
-}
-`
+    transform: scale(1.1);
+    }`
+
+
 
 /* CAJA DE REGISTRARSE */
 export const Registrarse = styled.button`
     width: 6.25rem;
     height: 2.188rem;
     border: solid white 0.125rem;
-    background-color: #1B4F72;
+    background-color: #0575E6;
     color: white;
     cursor: pointer;
-    border-radius: 10%;
+    border-radius: 10px;
     font-size: 1.063rem;
     font-family: 'Bacasime Antique', serif;
     &:hover {
     background-color: #5a9ec9;
     &:hover {
     transition:.3s ease all;
-    transform: scale(1.3);
+    transform: scale(1.1);
+    background: #0575e6; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+    to right,
+    #021b79,
+    #0575e6
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+    to right,
+    #021b79,
+    #0575e6
+    );
 }
+
 }
 `
 
 /* AQUI YA ESTAMOS EN HEADER 2 */
 /* CAJA DE ICONOS */
-export const BarraIconos = styled.div`
+export const BarraIconos = styled.div` 
     width: 81.25rem;
-    height: 5.938rem;
+    height: 3.938rem; /* AQUI MODIFIQUE EL DEADER 2 */////////////////////////////////
     /* border: solid black 0.125rem; */
-    background-color: #1B4F72;
+    /*  */
     font-size: 2.188rem;
     /* justify-items: center; */
     display: flex;
@@ -154,65 +189,76 @@ export const BarraIconos = styled.div`
 `
 /* ESTE CONTIENE CADA ICONO POR SEPARADO EN CADA CAJA */
 
-export const Menu = styled.button`
-    width: 6.25rem;
-    height: 4.625rem;
+export const Menu = styled.button` /* AQUI EDITE FONT-SIZE Y HEIGHT */
+    /* border: solid black 2px; */
+    width: 5.25rem;
+    height: 70%;
     border: none;
     justify-content: center;
     display: flex;
     align-items: center;
     flex-direction: column;
-    font-size: 1.0rem ;
+    font-size: 0.938;
     /* font-family: 'Bacasime Antique', serif; */
     cursor: pointer;
-    background-color: #1B4F72;
+    background-color: transparent;
     color: white;
     &:hover {
     /* background-color: #145a87; */
     /* border: solid white 2px; */
-    transform: scale(1.3);
+    transform: scale(1.1);
     transition:.3s ease all;
     font-family:-moz-initial ;
 }
 `
-/* CAJA DE QONTINE BUSQUEDA Y LUPA */
+/* CAJA DE QONTINE BUSQUEDA Y LUPA */  /* AQUI EDITE HEIGHT */
 export const CajaBusqueda = styled.div`
     width: 18.75rem;
-    height: 6.25rem;
+    height: 3.90rem;
     /* border: solid black 0.125rem; */
-    background-color: #1B4F72;
+    
     display: flex;
     justify-content: center;
     align-items: center;
+    
 
 `
 
 /* CAJA DE INGRESAR NUEVA BUSQUEDA */
 export const LoginBusqueda = styled.div`
-    width: 15.625rem;
-    height: 1.875rem;
+    width: 12.625rem;
+    height: 1.500rem;
     /* border: solid black 2px; */
-    background-color: #1B4F72;
     font-size: 2.5rem;
     justify-content: space-around;
     display: flex;
+    align-items: center;
     color: #ffffff;
+    
     
 `
 /* LUPA */
 export const Lupa = styled.button`
+
     &:hover {
-        transform: scale(1.3);
-    /* background-color: #145a87; */
+        transform: scale(1.2);
+    /* background-color: #0575E6; */
     /* border: solid white 2px; */
     transition:.3s ease all;
-
+    
 }
+margin-top: auto;
 border: none;
-background-color: #1B4F72;
-color: white;
-font-size: 40px;
+background-color: transparent;
+font-size: 35px;
 cursor: pointer;
+color: white;
 
 `
-
+export const Search = styled.input`
+height :25px; 
+width : 170px;
+border-radius: 5px;
+border: none;
+outline: none;
+`

@@ -1,6 +1,6 @@
 import React from "react";
-import { BarraDesplegable, Fuente, Header1, Header2, HeaderPrincipal, Ingresar, Registrarse, LoginIngreso, LogoSocetech, Socetech, ContenedorBLT, ContLR, BarraIconos, CajaBusqueda, LoginBusqueda, Menu, Lupa } from "./StyleHeader";
-import logo from './img/logo.png'
+import { BarraDesplegable, Fuente, Header1, Header2, HeaderPrincipal, Ingresar, Registrarse, LoginIngreso, LogoSocetech, Socetech, ContenedorBLT, ContLR, BarraIconos, CajaBusqueda, LoginBusqueda, Menu, Search, Lupa } from "./StyleHeader";
+import * as imagenes from '../img'
 /*  */
 import {AiOutlineMenu} from "react-icons/ai"
 import {AiOutlineHome} from "react-icons/ai"
@@ -17,9 +17,9 @@ function HeaderP(){
         <Header1>
           <ContenedorBLT>
             <BarraDesplegable><AiOutlineMenu/></BarraDesplegable>
-            <LogoSocetech src={logo}/>
+            <LogoSocetech src={imagenes.HeaderLogo} alt="logo"/>
             <Socetech>
-              <Fuente>SoceTech</Fuente>
+              <Fuente>SocceTech</Fuente>
             </Socetech>
           </ContenedorBLT>
           <ContLR>
@@ -46,7 +46,7 @@ function HeaderP(){
               </BarraIconos>
           <CajaBusqueda>
             <LoginBusqueda>
-              <input placeholder="Nueva Busqueda" style={{"height":"25px", "width":"150px"}}></input>
+              <Search placeholder="Nueva Busqueda"></Search>
             </LoginBusqueda>
             <Lupa>
                 <AiOutlineSearch/>

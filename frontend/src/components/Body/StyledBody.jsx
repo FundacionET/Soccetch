@@ -1,30 +1,32 @@
+import styled from  'styled-components'
 
+//Modificacion de body y abao
 export const Bodys = styled.div`
-    border: solid 3px black;
-    height: 69rem;
-    width: 100%;
     display: flex;
+    /* border: solid 3px black; */
+    flex-direction: column;
+    height: auto;
+    width: 100%;
     
-    `;
+`;
 
-// export const Menu = styled.div`
-//     height: 42.313rem;
-//     width: 22.5rem;
-//     border: solid 4px #9d0037;
-//     `
-
+//Modificacion del cuadro Noticias destacadas
 export const Cuadronoticias = styled.div`
     height: 2.563rem;
     width: 100%;
-    background-color: #0000f9;
+    /* border: solid 3px black; */
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    color: #000;
     font-size: 30px;
-`
+    background-color: #dcdc;
+`;
+//Cuadro para carrusel
 export const Cajacarrusel = styled.div`
     height: 42.313rem;
     width: 100%;
-    border: solid 4px aqua;
+    /* border: solid 4px black; */
+    background-color: #dcdcdc;
 `;
+
