@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import {Asidefondo} from '../../img/index'
+/* import {Asidefondo} from '../../img/index' */
 
 export const MenuContainer = styled.div`
     box-sizing: border-box;
