@@ -6,7 +6,7 @@ export const ContHeader = styled.header`
   background-color: #000;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   
 `;
 
@@ -14,13 +14,17 @@ export const Menu = styled.button`
   border-radius: 100%;
   height: 2rem;
   width: 2rem;
-  background-color: #0e0e0e;
+  background-color: transparent;
   outline: none;
   border: none;
   display: flex;
-  align-items: center;
+  align-content: center;
+  cursor: pointer;
 `
 export const MenuLogo = styled.img`
+  height: 2.8rem;
+  width: 2.8rem;
+  display: flex;
   
 `
 
@@ -28,13 +32,13 @@ export const Titulo = styled.button`
   font-family: 'Faster One', cursive;
   color: white;
   font-size: 4rem;
-  background-color: #000000;
+  background-color: transparent;
   outline: none;
   border: none;
   cursor: pointer;
 `
 export const ContainerProfileNameRol = styled.div`
-  border: 1px solid white;
+  /* border: 1px solid white; */
   width: 12rem;
   height: 3.125rem;
   display: flex;
@@ -49,12 +53,13 @@ export const Perfil = styled.div`
   height: 3rem;
 `
 export const ContainerPerfilRol = styled.div`
-  height: 1.5rem;
-  border: 1px solid blue;
+  height: auto;
+  /* border: 1px solid blue; */
+
   
 `
 export const Name = styled.div`
-  border: 1px solid red;
+  /* border: 1px solid red; */
   height: auto;
   width: auto;
   color: white;
@@ -62,7 +67,7 @@ export const Name = styled.div`
   
 `
 export const Rol = styled.div`
-  border: 1px solid red;
+  /* border: 1px solid red; */
   height: auto;
   width: auto;
   color: white;
@@ -70,8 +75,13 @@ export const Rol = styled.div`
 export const ContainerSetting = styled.button`
   border: none;
   outline: none;
-  border: 1px solid aqua;
+  /* border: 1px solid aqua; */
   width: 3rem;
   height: 3rem;
-  background-color: black;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  background-color: transparent;
 `
