@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const ContHeader = styled.header`
   height: 5rem;
-  width: 100%;
+  width: 80%;
   background-color: #000;
   display: flex;
   align-items: center;
@@ -10,7 +10,7 @@ export const ContHeader = styled.header`
   
 `;
 
-export const Menu = styled.button`
+/* export const Menu = styled.button`
   border-radius: 100%;
   height: 2rem;
   width: 2rem;
@@ -26,7 +26,7 @@ export const MenuLogo = styled.img`
   width: 2.8rem;
   display: flex;
   
-`
+` */
 
 export const Titulo = styled.button`
   font-family: 'Faster One', cursive;

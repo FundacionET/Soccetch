@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import { ContHeader,ContainerPerfilRol, ContainerProfileNameRol, ContainerSetting, Menu, MenuLogo, Name, Perfil, Rol, Titulo } from './styled.header';
+import { ContHeader,ContainerPerfilRol, ContainerProfileNameRol, ContainerSetting, Name, Perfil, Rol, Titulo } from './styled.header';
 import { LogoSocetech } from '../../Header/StyleHeader';
 import * as imagenes from '../../img'
 import {RiUserSettingsLine} from 'react-icons/ri'
@@ -9,9 +9,6 @@ const HeaderP = () => {
   return ( 
     <Fragment>
       <ContHeader>
-        <Menu>
-          <MenuLogo src={imagenes.BalonMenu}/>
-        </Menu>
         <LogoSocetech src={imagenes.HeaderLogo} alt='Logo'/>
         <Titulo>SocceTech</Titulo>
         <ContainerProfileNameRol>

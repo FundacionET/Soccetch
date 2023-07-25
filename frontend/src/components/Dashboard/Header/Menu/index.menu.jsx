@@ -1,65 +1,34 @@
-import React from 'react'
-import { Fragment } from 'react';
-import { MenuList, SaiderBarContadiner, SiderBar } from './styled.menu';
+import React, { useState } from "react";
+import { MyRoutes } from "./routers/routes";
+import styled from "styled-components";
+import { BrowserRouter } from "react-router-dom";
+import { Sidebar } from "./components/Sidebar";
+export const ThemeContext = React.createContext(null);
 
-const DropDownMenu = () => {
+function MenuDesplegable() {
 
-  const MakeButton = [
-    {
-      to: "dashboard/home",
-      icon: <i className='fa-solid fa-house'> </i>,
-      title: "Dashboard"
-    },
-    {
-      to: "dashboard/profile",
-      icon: <i className='fa-solid fa-id-card'> </i>,
-      title: "Profile",
-      subBtn: ["Passwords", "Mail", "Accounts"]
-    },
-    {
-      to: "dashboard/features",
-      icon: <i className='fa-solid fa-bag-shopping'> </i>,
-      title: "Features",
-      subBtn: ["Page", "Elements", "Portafolio"]
-    },
-    {
-      to: "dashboard/revenue",
-      icon: <i className='fa-solid fa-square-poll-vertical'> </i>,
-      title: "Revenue"
-    },
-    {
-      to: "dashboard/analytics",
-      icon: <i className='fa-solid fa-chart-pie'> </i>,
-      title: "Analytics"
-    },
-    {
-      to: "dashboard/calendar",
-      icon: <i className='fa-solid fa-calendar-days'> </i>,
-      title: "Calendar"
-    },
-    {
-      to: "dashboard/messages",
-      icon: <i className='fa-solid fa-comment'> </i>,
-      title: "Messages"
-    },
-    {
-      to: "dashboard/wallets",
-      icon: <i className='fa-solid fa-comment'> </i>,
-      title: "Wallets"
-    },  
-    
-  ]
-  return ( 
-    <Fragment>
-      <SaiderBarContadiner>
-        <SiderBar>
-          <MenuList>
-
-          </MenuList>
-        </SiderBar>
-      </SaiderBarContadiner>
-    </Fragment>
+  const [sidebarOpen, setSidebarOpen] = useState(true);
+  return (
+    <>
+      <BrowserRouter>
+        <Container className={sidebarOpen ? "sidebarState active" : ""}>
+          <Sidebar
+            sidebarOpen={sidebarOpen}
+            setSidebarOpen={setSidebarOpen}
+          />
+          <MyRoutes />
+        </Container>
+      </BrowserRouter>
+    </>
   );
 }
-
-export default DropDownMenu;
+const Container = styled.div`
+  display: grid;
+  grid-template-columns: 90px auto;
+  background: white;
+  transition:all 0.3s ;
+  &.active {
+    grid-template-columns: 300px auto;
+  }
+`;
+export default MenuDesplegable;
