@@ -14,13 +14,18 @@ export const Bodys = styled.div`
 export const Cuadronoticias = styled.div`
     height: 2.563rem;
     width: 100%;
-    /* border: solid 3px black; */
+    /* border: solid 1px black; */
     display: flex;
     align-items: center;
     justify-content: center;
     color: #000;
     font-size: 30px;
-    background-color: #dcdc;
+    color: white;
+    background: linear-gradient(
+    to right,
+    #021b79,
+    #0575e6
+);
 `;
 //Cuadro para carrusel
 export const Cajacarrusel = styled.div`

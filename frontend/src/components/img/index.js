@@ -2,5 +2,8 @@
 /* export const name_img = require('ruta img') */
 export const HeaderLogo = require('./HeaderLogo.png');
 
-// export const Asidefondo = require ('./Asidefondo')
+export const Asidefondo = require('./cieloestrellado.jpg');
 
+export const BajoAside = require('./BajoAside.png');
+
+export const fondoAbout = require('./fondoAbout.jpg');

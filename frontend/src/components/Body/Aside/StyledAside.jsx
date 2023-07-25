@@ -1,5 +1,6 @@
 import styled from 'styled-components'
-/* import {Asidefondo} from '../../img/index' */
+import cielo from "../../img/cieloestrellado.jpg"
+import Fondo from "../../img/BajoAside.png"
 
 export const MenuContainer = styled.div`
     box-sizing: border-box;
@@ -12,6 +13,15 @@ export const MenuContainer = styled.div`
     background: no-repeat;
     `
 
+export const MiniContainer = styled.div`
+    width: 100%;
+    height: 50%;
+    background: no-repeat;
+    background-image: url(${Fondo});
+    background-size: contain;
+    background-position: 0rem -1rem;
+`
+
 export const MenuList = styled.div`
 box-sizing: border-box;
 width: 100%;
@@ -21,6 +31,7 @@ width: 100%;
     margin: 0;
     display: flex;
     flex-direction: column;
+    background-image: url(${cielo}); 
     
 `
 
@@ -34,6 +45,6 @@ export const MenuItem = styled.li`
     border: 1px solid;
     padding-bottom: 9%;
     &:nth-child(1){
-    padding-bottom: 6%;
+    padding-bottom: 5%;
     }
-    `;
+    `
