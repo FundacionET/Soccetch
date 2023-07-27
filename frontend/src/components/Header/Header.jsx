@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import {
   BarraDesplegable,
-  Fuente,
   Header1,
   Header2,
   HeaderPrincipal,
@@ -11,13 +10,8 @@ import {
   LogoSocetech,
   Socetech,
   ContenedorBLT,
-  ContLR,
   BarraIconos,
-  CajaBusqueda,
-  LoginBusqueda,
   Menu,
-  Search,
-  Lupa,
 } from "./StyleHeader";
 import * as imagenes from "../img";
 /*  */
@@ -26,7 +20,6 @@ import { AiOutlineHome } from "react-icons/ai";
 import { PiChartLineUpBold } from "react-icons/pi";
 import { GiAerialSignal } from "react-icons/gi";
 import { FaRegStar } from "react-icons/fa";
-import { AiOutlineSearch } from "react-icons/ai";
 import Aside from "./Aside/Aside";
 
 function HeaderP() {
@@ -42,43 +35,33 @@ function HeaderP() {
             <Aside active={active} />
             <LogoSocetech src={imagenes.HeaderLogo} alt="logo" />
             <Socetech>
-              <Fuente>SocceTech</Fuente>
+              SocceTech
             </Socetech>
-          </ContenedorBLT>
-          <ContLR>
             <LoginIngreso>
               <Ingresar>Ingresar</Ingresar>
               <Registrarse>Registrarse</Registrarse>
             </LoginIngreso>
-          </ContLR>
+          </ContenedorBLT>
         </Header1>
         <Header2>
           <BarraIconos>
             <Menu>
-              <AiOutlineHome size={35} />
-              HOME
+              <AiOutlineHome size={30} />
+              Home
             </Menu>
             <Menu>
-              <PiChartLineUpBold size={35} />
-              DATOS
+              <PiChartLineUpBold size={30} />
+              Datos
             </Menu>
             <Menu>
-              <GiAerialSignal size={35} />
-              EN VIVO
+              <GiAerialSignal size={30} />
+              En Vivo
             </Menu>
             <Menu>
-              <FaRegStar size={35} />
-              FAVORITOS
+              <FaRegStar size={30} />
+              Favoritos
             </Menu>
           </BarraIconos>
-          <CajaBusqueda>
-            <LoginBusqueda>
-              <Search placeholder="Nueva Busqueda"></Search>
-            </LoginBusqueda>
-            <Lupa>
-              <AiOutlineSearch />
-            </Lupa>
-          </CajaBusqueda>
         </Header2>
       </HeaderPrincipal>
     </div>
