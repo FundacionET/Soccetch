@@ -20,7 +20,7 @@ import {
   Lupa,
 } from "./StyleHeader";
 import * as imagenes from "../img";
-/*  */
+import { useNavigate } from "react-router-dom";
 import { AiOutlineMenu } from "react-icons/ai";
 import { AiOutlineHome } from "react-icons/ai";
 import { PiChartLineUpBold } from "react-icons/pi";
@@ -31,6 +31,7 @@ import Aside from "./Aside/Aside";
 
 function HeaderP() {
   const [active, setActive] = useState("");
+  const navigate = useNavigate();
   return (
     <div>
       <HeaderPrincipal>
@@ -54,19 +55,19 @@ function HeaderP() {
         </Header1>
         <Header2>
           <BarraIconos>
-            <Menu>
+            <Menu onClick={() => navigate("/Home")}>
               <AiOutlineHome size={35} />
               HOME
             </Menu>
-            <Menu>
+            <Menu onClick={() => navigate("/data")}>
               <PiChartLineUpBold size={35} />
               DATOS
             </Menu>
-            <Menu>
+            <Menu onClick={() => navigate("/live")}>
               <GiAerialSignal size={35} />
               EN VIVO
             </Menu>
-            <Menu>
+            <Menu onClick={() => navigate("/favorites")}>
               <FaRegStar size={35} />
               FAVORITOS
             </Menu>

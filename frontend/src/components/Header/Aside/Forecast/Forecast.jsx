@@ -1,9 +1,13 @@
-import React from 'react';
+import React from "react";
+import HeaderP from "../../Header";
 
 const Forecast = () => {
-  return ( 
-    <div>Forecast (Pronóstico)</div>
-   );
-}
- 
+  return (
+    <div>
+      <HeaderP />
+      Forecast (Pronóstico)
+    </div>
+  );
+};
+
 export default Forecast;

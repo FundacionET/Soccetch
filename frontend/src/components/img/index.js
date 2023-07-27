@@ -8,3 +8,4 @@ export const BajoAside = require('./BajoAside.png');
 
 export const fondoAbout = require('./fondoAbout.jpg');
 
+export const fondo = require('./login.jpg');

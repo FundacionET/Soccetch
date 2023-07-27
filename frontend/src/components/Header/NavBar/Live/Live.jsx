@@ -1,9 +1,13 @@
-import React from 'react';
+import React from "react";
+import HeaderP from "../../Header";
 
 const Lives = () => {
-  return ( 
-    <div>Lives</div>
-   );
-}
- 
+  return (
+    <div>
+      <HeaderP />
+      Lives
+    </div>
+  );
+};
+
 export default Lives;

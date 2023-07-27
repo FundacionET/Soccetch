@@ -4,7 +4,6 @@ import styled from 'styled-components'
 export const HeaderPrincipal = styled.header`
     width: 100%;
     height: 100%;
-    
     /* border: solid black 0.125rem; */
 `
 

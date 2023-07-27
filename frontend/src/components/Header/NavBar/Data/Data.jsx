@@ -1,7 +1,11 @@
 import React from 'react';
+import HeaderP from '../../Header';
 const Data = () => {
   return ( 
-    <div>Data</div>
+    <div>
+      <HeaderP/>
+      Data
+    </div>
    );
 }
  
