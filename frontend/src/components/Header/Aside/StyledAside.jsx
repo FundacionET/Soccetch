@@ -18,7 +18,8 @@ export const MenuContainer = styled.div`
 
 export const MiniContainer = styled.img`
   width: 100%;
-  height: 42%;
+  height: 65.5%;
+  object-fit: cover;
   background: no-repeat;
 `;
 

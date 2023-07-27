@@ -46,3 +46,31 @@ export const WithContainer = styled.div`
   border-radius: 5px 5px 10px 10px;
   box-shadow: 0px 1px 5px 0px #202020;
 `;
+
+export const MyTeams = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 10rem;
+  overflow-y: scroll;
+  ::-webkit-scrollbar{
+    display: none;
+  }
+`;
+
+export const TeamInfo = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+export const TeamIng = styled.img`
+  
+`;
+
+export const TeamName = styled.div`
+  font-size: 2rem;
+  font-weight: 600;
+  /* -webkit-text-stroke: 2px black; */
+  color: #fff;
+`;
+
